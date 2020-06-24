@@ -1,0 +1,19 @@
+{
+  "name": "own-da-taste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Palak-137/own-da-taste.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Palak-137/own-da-taste/issues"
+  },
+  "homepage": "https://github.com/Palak-137/own-da-taste#readme"
+}
