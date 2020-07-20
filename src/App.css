@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(241, 229, 228);
+}
+nav{
+    margin-top: 0!important;
+    padding: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+nav .Header h4{
+    margin: 10px auto;
+    align-self: center;
+}
+nav .Header .user-option{
+    float: right;
+    font-size: 1.3em;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+nav .Header .user-option li a{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin: 8px;
+    padding: 5px;
+    font-size: 1.3em;
+    font-weight: bolder;
+    position: relative;
+    z-index: 20;
+    color: rgb(7, 7, 7);
+}
+.card{
+    width: 50% ;
+    height: max-content;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.card::after{
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.5) !important;
+    transform: skew(-5deg) !important;
+}
+.card img{
+    width: 95%;
+    height: 200px;
+    margin: 10px;
+    padding: 5px;
+    border: 5px thick black!important;
+    border-radius: 0%  0% 40% 0%;
+    transition: 0.5s;
+}
+.card img:hover{
+    transform: rotate(-5deg);
+}
+.recipe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2, h3, h4, h5,h6{
+    font-weight: bolder;
+    margin: 5px;
+}
