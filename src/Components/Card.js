@@ -7,7 +7,7 @@ const Card =({foods})=>{
             <div class="container recipe">
             <div className="card" fey={recipe.id}>
                 <h2 className="heading">{recipe.name}</h2>
-                <img src={require (`../img/${recipe.img}.jpg`)}></img>
+                <img src={require (`${recipe.img}`)}></img>
                 <h5>{recipe.recipe}</h5>
             </div>
             </div>
