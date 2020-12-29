@@ -5,14 +5,15 @@ import
  { productListReducer,
    productDetailsReducer } from "./reducers/productReducers"
 import {cartReducer} from "./reducers/cartReducer.js"
-import { userLoginReducer } from './reducers/userReducres.js'
+import { userLoginReducer,userRegisterReducer } from './reducers/userReducres.js'
 
 
 const reducer = combineReducers({
    productList: productListReducer,
    productDetails: productDetailsReducer,
    cart: cartReducer,
-   userLogin: userLoginReducer
+   userLogin: userLoginReducer,
+   userRegister: userRegisterReducer,
 })
 
 
