@@ -44,6 +44,25 @@ import { logout } from '../actions/userAction'
          </LinkContainer> 
           )
         }
+        { userInfo && userInfo.isAdmin && (
+           <NavDropdown style={{color: "whitesmoke"}} title='Admin' id='adminmenu'>
+           <LinkContainer to='admin/userlist'style={{color: 'black'}}>
+             <NavDropdown.Item>Users</NavDropdown.Item>
+           </LinkContainer>
+
+           <LinkContainer to='/admin/productlist'style={{color: 'black'}}>
+             <NavDropdown.Item>Products</NavDropdown.Item>
+           </LinkContainer>
+
+           <LinkContainer to='/admin/orderlist'style={{color: 'black'}}>
+             <NavDropdown.Item>Orders</NavDropdown.Item>
+           </LinkContainer>
+        
+         <NavDropdown.Item onClick={logoutHandler}>
+            logout
+         </NavDropdown.Item>
+         </NavDropdown>
+        )}
        
           </Nav>
         </Navbar.Collapse>
