@@ -5,8 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import CheckoutSteps from '../components/CheckoutSteps'
 import { createOrder } from '../actions/orderAction'
-import { ORDER_CREATE_RESET } from '../constants/ordeConstants'
-import { USER_DETAILS_RESET } from '../constants/userConstant'
+
 
 const PlaceOrderScreen = ({ history }) => {
   const dispatch = useDispatch()

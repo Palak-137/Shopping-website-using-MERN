@@ -1,4 +1,4 @@
- import {Navbar,Nav,NavDropdown,Form,FormControl,Button, Container} from 'react-bootstrap';
+ import {Navbar,Nav,NavDropdown, Container} from 'react-bootstrap';
 import {LinkContainer} from "react-router-bootstrap";
 import { useDispatch, useSelector} from 'react-redux'
 import { logout } from '../actions/userAction'
@@ -46,7 +46,7 @@ import { logout } from '../actions/userAction'
         }
         { userInfo && userInfo.isAdmin && (
            <NavDropdown style={{color: "whitesmoke"}} title='Admin' id='adminmenu'>
-           <LinkContainer to='admin/userlist'style={{color: 'black'}}>
+           <LinkContainer to='/admin/userlist'style={{color: 'black'}}>
              <NavDropdown.Item>Users</NavDropdown.Item>
            </LinkContainer>
 
