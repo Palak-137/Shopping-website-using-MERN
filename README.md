@@ -1,4 +1,4 @@
-# Shoping website🛒
+# Shopping website🛒
 This is a clone of Flipkart where you can buy the product and rate them and top rated products are offered first.It also has admin feature where you can 
 regulate your site.
 <br/>
