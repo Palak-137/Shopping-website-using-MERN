@@ -14,7 +14,7 @@ It is made on MERN stack ie.
  ### How to run locally?
  steps - 
  1. Run following command in your git bash -
- git clone {}
+ git clone https://github.com/Palak-137/Shoping-website-using-MERN.git
  2. Run the following command in your command prompt-
  npm install
  3. In the root folder run the command - 
@@ -47,7 +47,10 @@ It is made on MERN stack ie.
  6. Rating and review can be given
  7. Admin functionalty
  8. Responsive 
+ <br/>
+ <br/>
  
+ #### Made to learn ❤
  
  
  
