@@ -5,6 +5,7 @@ import Product from "../components/Product"
 import { listProducts } from "../actions/productAction";
 import Message from "../components/Message.js"
 import Loader from "../components/Loader.js"
+import ProductCarousel from '../components/ProductCarousel'
 
 function HomeScreen({match}) {
 
@@ -20,9 +21,12 @@ function HomeScreen({match}) {
     },[dispatch,keyword]);
 
     return (
-        <>
+        <> 
+         {!keyword && <ProductCarousel/>}
             <h1> Latest Products </h1>
-    {loading ?<Loader/>: error ? <Message varient="danger">{error}</Message>:  <Row>
+                {loading ?<Loader/>: error 
+                ? <Message varient="danger">{error}</Message>
+                :<Row>
                 {products.map(product=>{
                     return(
                     <Col sm={12} md={6} lg={4} xl={3}>
@@ -30,7 +34,7 @@ function HomeScreen({match}) {
                     </Col>
                     )
                 })}  
-            </Row>}
+                </Row>}
            
         </>
     )

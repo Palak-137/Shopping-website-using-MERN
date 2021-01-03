@@ -6,7 +6,10 @@ import { PRODUCT_LIST_FAIL,
     PRODUCT_DETAILS_FAIL,
     PRODUCT_DELETE_FAIL,
     PRODUCT_DELETE_SUCCESS,
-    PRODUCT_DELETE_REQUEST
+    PRODUCT_DELETE_REQUEST,
+    PRODUCT_TOP_REQUEST,
+    PRODUCT_TOP_SUCCESS,
+    PRODUCT_TOP_FAIL
     } 
     from "../constants/productConstant";
 import axios from "axios";
@@ -83,19 +86,19 @@ export const listProductsDetails=(id) => async(dispatch)=> {
     }
  }
 
- export const listTopProducts = (keyword='') => async(dispatch)=> {
+ export const listTopProducts = () => async(dispatch)=> {
     try{
-        dispatch({type: PRODUCT_LIST_REQUEST})
+        dispatch({type: PRODUCT_TOP_REQUEST})
  
-        const {data} = await axios.get(`/api/products?keyword=${keyword}`)
+        const {data} = await axios.get(`/api/products/top`)
  
         dispatch({
-            type: PRODUCT_LIST_SUCCESS,
+            type: PRODUCT_TOP_SUCCESS,
             payload: data,
         })
     }catch(error){
      dispatch({
-         type: PRODUCT_LIST_FAIL,
+         type: PRODUCT_TOP_FAIL,
          payload: error.response && error.response.data.message 
          ? error.response.data.message 
          : error.message,
