@@ -2,6 +2,8 @@
 import {LinkContainer} from "react-router-bootstrap";
 import { useDispatch, useSelector} from 'react-redux'
 import { logout } from '../actions/userAction'
+import SearchBox from './SearchBox'
+import {Route} from 'react-router-dom'
 
  const Header = () => {
    const dispatch = useDispatch();
@@ -15,7 +17,7 @@ import { logout } from '../actions/userAction'
 
     return (
       <header>
-        <Navbar bg="dark" varient='dark' expand="lg" collapseOnSelect>
+        <Navbar bg="dark" varient='dark'  expand="lg" collapseOnSelect>
          <Container>
              <LinkContainer to="/" style={{color: "white"}}>
                <Navbar.Brand>Proshop</Navbar.Brand>
@@ -23,8 +25,11 @@ import { logout } from '../actions/userAction'
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
+
+           <Route render={({history})=> <SearchBox history={history}/>}></Route>
           <Nav className="mr-auto">
-          <LinkContainer to="/cart" style={{color: "white"}}>
+           
+          <LinkContainer to="/cart" style={{color: "white",float: 'right'}}>
             <Nav.Link ><i className="fas fa-shopping-cart"/>Cart</Nav.Link>
         </LinkContainer>
         {
