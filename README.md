@@ -1,5 +1,5 @@
 # Shopping website🛒
-This is a clone of Flipkart where you can buy the product and rate them and top rated products are offered first.It also has admin feature where you can 
+This is a clone of shoping site where you can buy the product and rate them and top rated products are offered first.It also has admin feature where you can 
 regulate your site.
 <br/>
 ### Technology Stack 👩‍💻
@@ -14,8 +14,10 @@ It is made on MERN stack ie.
  ### How to run locally?
  steps - 
  1. Run following command in your git bash -
- git clone https://github.com/Palak-137/Shoping-website-using-MERN.git
- 2. Run the following command in your command prompt-
+ git clone https://github.com/Palak-137/Shopping-website-using-MERN.git
+ 2. Run the following command in root folder ie Shopping-website-using-MERN-
+ npm install
+ 3. Run the command in frontend folder - 
  npm install
  3. In the root folder run the command - 
  npm run dev
@@ -52,7 +54,7 @@ It is made on MERN stack ie.
  
  
  
- #### Made to learn ❤
+ #### Made with ❤ & ☕ to learn
  
  
  
